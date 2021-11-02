@@ -1,7 +1,7 @@
 from starter.ml.data import process_data
 from starter.ml.model import inference
 
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 
 from pydantic import BaseModel, Field
 
@@ -67,4 +67,4 @@ async def get_predicition(payload: Input):
     if prediction==0: prediction = "Income > 50k"
     elif prediction==1: "Income <= 50k"
 
-    return {"forecast": prediction[0]}
+    return {"forecast": prediction}
