@@ -1,0 +1,96 @@
+Bachelors
+Precision   0.9457295373665481
+Recall  0.9572264745610085
+fbeta   0.9514432759006488
+
+-
+HS-grad
+Precision   0.9424920127795527
+Recall  0.8805970149253731
+fbeta   0.9104938271604939
+
+-
+11th
+Precision   1.0
+Recall  0.8166666666666667
+fbeta   0.8990825688073394
+
+-
+Masters
+Precision   0.9577319587628866
+Recall  0.9687174139728885
+fbeta   0.9631933644375326
+
+-
+9th
+Precision   1.0
+Recall  0.8518518518518519
+fbeta   0.92
+
+-
+Some-college
+Precision   0.9498861047835991
+Recall  0.9019466474405191
+fbeta   0.9252958579881657
+
+-
+Assoc-acdm
+Precision   0.9488188976377953
+Recall  0.909433962264151
+fbeta   0.9287090558766858
+
+-
+Assoc-voc
+Precision   0.9668674698795181
+Recall  0.889196675900277
+fbeta   0.9264069264069263
+
+-
+7th-8th
+Precision   1.0
+Recall  0.825
+fbeta   0.9041095890410958
+
+-
+Doctorate
+Precision   0.9678456591639871
+Recall  0.9836601307189542
+fbeta   0.9756888168557536
+
+-
+Prof-school
+Precision   0.9720930232558139
+Recall  0.9881796690307328
+fbeta   0.9800703399765532
+
+-
+5th-6th
+Precision   1.0
+Recall  0.9375
+fbeta   0.967741935483871
+
+-
+10th
+Precision   0.9814814814814815
+Recall  0.8548387096774194
+fbeta   0.9137931034482759
+
+-
+1st-4th
+Precision   1.0
+Recall  0.8333333333333334
+fbeta   0.9090909090909091
+
+-
+Preschool
+Precision   1.0
+Recall  1.0
+fbeta   1.0
+
+-
+12th
+Precision   1.0
+Recall  0.8181818181818182
+fbeta   0.9
+
+-

@@ -1,0 +1,42 @@
+Never-married
+Precision   0.9866369710467706
+Recall  0.9022403258655805
+fbeta   0.9425531914893618
+
+-
+Married-civ-spouse
+Precision   0.9480243161094225
+Recall  0.9321578003586372
+fbeta   0.9400241109101869
+
+-
+Divorced
+Precision   0.9604651162790697
+Recall  0.8920086393088553
+fbeta   0.9249720044792834
+
+-
+Married-spouse-absent
+Precision   1.0
+Recall  0.8529411764705882
+fbeta   0.9206349206349206
+
+-
+Separated
+Precision   1.0
+Recall  0.9242424242424242
+fbeta   0.9606299212598425
+
+-
+Married-AF-spouse
+Precision   1.0
+Recall  0.9
+fbeta   0.9473684210526316
+
+-
+Widowed
+Precision   0.9866666666666667
+Recall  0.8705882352941177
+fbeta   0.925
+
+-

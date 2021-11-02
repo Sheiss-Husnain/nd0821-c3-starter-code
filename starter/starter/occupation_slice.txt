@@ -1,0 +1,90 @@
+Adm-clerical
+Precision   0.930379746835443
+Recall  0.8698224852071006
+fbeta   0.8990825688073395
+
+-
+Exec-managerial
+Precision   0.956610515569168
+Recall  0.9522357723577236
+fbeta   0.9544181308887191
+
+-
+Handlers-cleaners
+Precision   0.9726027397260274
+Recall  0.8255813953488372
+fbeta   0.8930817610062893
+
+-
+Prof-specialty
+Precision   0.9617662897145934
+Recall  0.9607315761161915
+fbeta   0.961248654467169
+
+-
+Other-service
+Precision   0.9512195121951219
+Recall  0.8540145985401459
+fbeta   0.9
+
+-
+Sales
+Precision   0.948559670781893
+Recall  0.9379450661241099
+fbeta   0.9432225063938618
+
+-
+Craft-repair
+Precision   0.9313835770528683
+Recall  0.891280947255113
+fbeta   0.9108910891089108
+
+-
+Transport-moving
+Precision   0.9645390070921985
+Recall  0.85
+fbeta   0.9036544850498339
+
+-
+Farming-fishing
+Precision   0.9626168224299065
+Recall  0.8956521739130435
+fbeta   0.9279279279279279
+
+-
+Machine-op-inspct
+Precision   0.9642857142857143
+Recall  0.864
+fbeta   0.9113924050632912
+
+-
+Tech-support
+Precision   0.9366197183098591
+Recall  0.9399293286219081
+fbeta   0.9382716049382717
+
+-
+?
+Precision   0.9715909090909091
+Recall  0.8952879581151832
+fbeta   0.9318801089918256
+
+-
+Protective-serv
+Precision   0.9383886255924171
+Recall  0.9383886255924171
+fbeta   0.9383886255924171
+
+-
+Armed-Forces
+Precision   1.0
+Recall  1.0
+fbeta   1.0
+
+-
+Priv-house-serv
+Precision   1.0
+Recall  1.0
+fbeta   1.0
+
+-

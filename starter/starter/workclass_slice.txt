@@ -1,0 +1,54 @@
+State-gov
+Precision   0.9415041782729805
+Recall  0.9575070821529745
+fbeta   0.949438202247191
+
+-
+Self-emp-not-inc
+Precision   0.9626972740315638
+Recall  0.9267955801104972
+fbeta   0.944405348346235
+
+-
+Private
+Precision   0.9494697442295695
+Recall  0.9200080596413459
+fbeta   0.9345067539909946
+
+-
+Federal-gov
+Precision   0.9581005586592178
+Recall  0.9245283018867925
+fbeta   0.9410150891632373
+
+-
+Local-gov
+Precision   0.9490131578947368
+Recall  0.9351701782820098
+fbeta   0.9420408163265306
+
+-
+?
+Precision   0.9715909090909091
+Recall  0.8952879581151832
+fbeta   0.9318801089918256
+
+-
+Self-emp-inc
+Precision   0.9600638977635783
+Recall  0.9662379421221865
+fbeta   0.9631410256410257
+
+-
+Without-pay
+Precision   1.0
+Recall  1.0
+fbeta   1.0
+
+-
+Never-worked
+Precision   1.0
+Recall  1.0
+fbeta   1.0
+
+-
