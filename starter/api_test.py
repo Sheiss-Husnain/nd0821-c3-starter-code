@@ -32,7 +32,7 @@ def test_post():
 
     assert response.status_code == 200
     assert (response.json()["predict"][: len('Income <= 50k')]) == "Income <= 50k"
-    #assert json.loads(response.text)["forecast"] == "Income <= 50k"
+    #assert json.loads(response.text)[""] == "Income <= 50k"
 
 def test_post_():
     data = {
@@ -55,4 +55,4 @@ def test_post_():
     response = client.post("/predict", data=json.dumps(data))
 
     assert response.status_code == 200
-    assert json.loads(response.text)["prediction"] == "Income > 50k"
+    assert (response.json()["predict"][: len('Income > 50k')]) == "Income > 50k"
