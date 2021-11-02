@@ -49,7 +49,7 @@ def test_post_():
         "native-country": "United-States",
     }
         #40,Private,193524,Doctorate,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,0,0,60,United-States,>50K
-    response = client.post("/predict", json=data)
+    response = client.post("/predict", data=json.dumps(data))
 
     assert response.status_code == 200
     assert json.loads(response.text)["forecast"] == "Income > 50k"
