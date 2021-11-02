@@ -48,7 +48,7 @@ async def root():
     return {"Welcome to Census Model"}
 
 @app.post("/predict")
-async def get_predicition(payload: Input):
+async def get_predicition(payload: Input, response_model=Output):
     df = pd.DataFrame.from_dict([payload.dict(by_alias=True)])
     cat_features = [
     "workclass",
