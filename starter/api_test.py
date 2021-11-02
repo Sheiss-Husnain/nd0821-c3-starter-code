@@ -26,10 +26,11 @@ def test_post():
         "native-country": "Cuba",
     }
         #28,Private,338409,Bachelors,13,Married-civ-spouse,Prof-specialty,Wife,Black,Female,0,0,40,Cuba,<=50K
-    response = client.post("/predict", json=data)
+    #response = client.post("/predict", json=data)
+    response = client.post("/predict", data=json.dumps(data))
 
     assert response.status_code == 200
-    assert (r.json()["predict"][: len('Income <= 50k')]) == "Income <= 50k"
+    assert (response.json()["predict"][: len('Income <= 50k')]) == "Income <= 50k"
     #assert json.loads(response.text)["forecast"] == "Income <= 50k"
 
 def test_post_():
