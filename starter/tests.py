@@ -31,7 +31,7 @@ def test_inference():
 
     assert len(X_train) == len(inference(model,X_train))
 
-    assert np.all(y_pred==0 or y_pred==1) == 1
+    assert np.all((y_pred==0)|(y_pred == 1)) == True
 
 def test_train_model():
     model = train_model(X_train,y_train)
