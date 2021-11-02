@@ -1,4 +1,8 @@
+from fastapi.testclient import TestClient
 import json
+from main import app
+client = TestClient(app)
+
 
 import requests
 data = {
@@ -34,7 +38,13 @@ data = {
 #         "native_country": "United-States"
 #       }
 #<=50k
-response = requests.post('https://sheiss-census.herokuapp.com/predict/', data=json)
-
-print(response.status_code)
-print(response.json())
+#response = requests.post('https://sheiss-census.herokuapp.com/predict/',  data=json.dumps(data))
+response = client.post("/predict/", json=data)
+print(response)
+if response.status_code == 200:
+    if response.json()['predict'] == 0:
+        print('Income <=50K')
+    else:
+        print('Income >50K')
+# print(response.status_code)
+# print(response.json())
