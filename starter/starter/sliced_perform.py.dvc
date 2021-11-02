@@ -1,0 +1,4 @@
+outs:
+- md5: ad6a2281139be1ac9b56daa27943e49f
+  size: 1336
+  path: sliced_perform.py
