@@ -4,7 +4,7 @@ from ml.model import inference, compute_model_metrics
 
 from ml.data import process_data
 
-df = pd.read_csv(r"starter/data/census_clean.csv")
+df = pd.read_csv("../data/census-clean.csv")
 
 model = pd.read_pickle(r"starter/model/model.pkl")
 encoder = pd.read_pickle(r"starter/model/encoder.pkl")
