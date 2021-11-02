@@ -22,4 +22,4 @@ data= {
 response = requests.post('https://sheiss-census.herokuapp.com/predict/', json=data)
 
 print(response.status_code)
-print(response.json())
+print(response.json()["predict"])
