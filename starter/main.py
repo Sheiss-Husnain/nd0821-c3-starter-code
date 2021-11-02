@@ -1,5 +1,5 @@
-from starter.starter.ml.data import process_data
-from starter.starter.ml.model import inference
+from starter.ml.data import process_data
+from starter.ml.model import inference
 
 from fastapi import FastAPI
 
@@ -9,8 +9,8 @@ import pandas as pd
 import numpy as np
 import os
 
-model = pd.read_pickle(r"starter/model/model.pkl")
-Encoder = pd.read_pickle(r"starter/model/encoder.pkl")
+model = pd.read_pickle("/model/model.pkl")
+Encoder = pd.read_pickler"/model/encoder.pkl")
 
 app = FastAPI()
 
