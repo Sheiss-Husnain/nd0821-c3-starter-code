@@ -9,8 +9,8 @@ import pandas as pd
 import numpy as np
 import os
 
-model = pd.read_pickle("model/model.pkl")
-Encoder = pd.read_pickler("model/encoder.pkl")
+model = pd.read_pickle("./model/model.pkl")
+Encoder = pd.read_pickle("./model/encoder.pkl")
 
 app = FastAPI()
 
