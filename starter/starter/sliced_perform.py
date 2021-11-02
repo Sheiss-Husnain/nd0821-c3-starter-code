@@ -38,7 +38,7 @@ def slice_perform(model, df, column, encoder, lb):
 
         y_pred = inference(model, X_test)
 
-        precision, recall, fbeta = computer_model_metrics(y_test, y_pred)
+        precision, recall, fbeta = compute_model_metrics(y_test, y_pred)
 
         file.write('Precision   {}'.format(precision))
         file.write('Recall  {}'.format(recall))

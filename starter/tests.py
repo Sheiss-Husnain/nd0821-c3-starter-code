@@ -42,7 +42,7 @@ def test_compute_model_metrics():
     model = train_model(X_train,y_train)
     y_pred = inference(model,X_train)
     
-    metrics = commpute_model_metrics(y_train,y_pred)
+    metrics = compute_model_metrics(y_train,y_pred)
 
     assert len(metrics)==3
 
