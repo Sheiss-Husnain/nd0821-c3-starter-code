@@ -19,7 +19,7 @@ data= {
   "native_country": "United-States"
 }
 
-response = requests.post('https://protected-cove-94689.herokuapp.com/predict/', data=json.dumps(data))
+response = requests.post('https://sheiss-census.herokuapp.com/predict/', data=json.dumps(data))
 
 print(response.status_code)
 print(response.json())
