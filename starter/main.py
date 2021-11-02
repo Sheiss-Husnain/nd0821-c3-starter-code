@@ -52,37 +52,37 @@ async def root():
 
 @app.post("/predict")
 async def get_predicition(payload: Input, response_model=Output):
-    #df = pd.DataFrame.from_dict([payload.dict(by_alias=True)])
+    df = pd.DataFrame.from_dict([payload.dict(by_alias=True)])
 
-    age = payload.age
-    workclass = payload.workclass
-    fnlgt = payload.fnlgt
-    education = payload.education
-    education_num = payload.education_num
-    marital_status = payload.marital_status
-    occupation = payload.occupation
-    relationship = payload.relationship
-    race = payload.race
-    sex = payload.sex
-    capital_gain = payload.capital_gain
-    capital_loss = payload.capital_loss
-    hours_per_week = payload.hours_per_week
-    native_country = payload.native_country
+    # age = payload.age
+    # workclass = payload.workclass
+    # fnlgt = payload.fnlgt
+    # education = payload.education
+    # education_num = payload.education_num
+    # marital_status = payload.marital_status
+    # occupation = payload.occupation
+    # relationship = payload.relationship
+    # race = payload.race
+    # sex = payload.sex
+    # capital_gain = payload.capital_gain
+    # capital_loss = payload.capital_loss
+    # hours_per_week = payload.hours_per_week
+    # native_country = payload.native_country
 
-    df = pd.DataFrame({"age" : age,
-                        "workclass" : workclass,
-                        "fnlgt" : fnlgt,
-                        "education" : education,
-                        "education-num" : education_num,
-                        "marital-status" : marital_status,
-                        "occupation" : occupation,
-                        "relationship" : relationship,
-                        "race" : race,
-                        "sex" : sex,
-                        "capital-gain" : capital_gain,
-                        "capital-loss" : capital_loss,
-                        "hours-per-week" : hours_per_week,
-                        "native-country" : native_country})
+    # df = pd.DataFrame({"age" : age,
+    #                     "workclass" : workclass,
+    #                     "fnlgt" : fnlgt,
+    #                     "education" : education,
+    #                     "education-num" : education_num,
+    #                     "marital-status" : marital_status,
+    #                     "occupation" : occupation,
+    #                     "relationship" : relationship,
+    #                     "race" : race,
+    #                     "sex" : sex,
+    #                     "capital-gain" : capital_gain,
+    #                     "capital-loss" : capital_loss,
+    #                     "hours-per-week" : hours_per_week,
+    #                     "native-country" : native_country})
 
     cat_features = [
     "workclass",
