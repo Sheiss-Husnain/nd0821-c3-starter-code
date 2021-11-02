@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import os
 
-df = pd.read_csv(os.path.join(os.getcwd(),r"starter/data/census_clean.csv"))
+df = pd.read_csv(os.path.join(os.getcwd(),r"starter/data/census-clean.csv"))
 
 cat_features = [
     "workclass",
