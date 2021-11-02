@@ -12,9 +12,11 @@ import os
 model_dir = "starter/model/"
 model_file = model_dir+"model.pkl"
 encoding_file = model_dir+"encoder.pkl"
+lb_file = model_dir+'lb.pkl'
 
 model = pd.read_pickle(model_file)
 Encoder = pd.read_pickle(encoding_file)
+lb = pd.read_pickle(lb_file)
 
 app = FastAPI()
 
@@ -66,7 +68,7 @@ async def get_predicition(payload: Input, response_model=Output):
     hours_per_week = payload.hours_per_week
     native_country = payload.native_country
 
-    df = pd.DataFrame([{"age" : age,
+    df = pd.DataFrame({"age" : age,
                         "workclass" : workclass,
                         "fnlgt" : fnlgt,
                         "education" : education,
@@ -79,7 +81,7 @@ async def get_predicition(payload: Input, response_model=Output):
                         "capital-gain" : capital_gain,
                         "capital-loss" : capital_loss,
                         "hours-per-week" : hours_per_week,
-                        "native-country" : native_country}])
+                        "native-country" : native_country})
 
     cat_features = [
     "workclass",
@@ -91,7 +93,7 @@ async def get_predicition(payload: Input, response_model=Output):
     "sex",
     "native-country"]
 
-    X, y, encoder, lb = process_data(df, categorical_features=cat_features, training=False,encoder=Encoder)
+    X, y, encoder, lb = process_data(df, categorical_features=cat_features, training=False,encoder=Encoder,lb=lb)
 
     prediction = inference(model, X)
 
