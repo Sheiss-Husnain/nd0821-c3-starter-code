@@ -56,3 +56,4 @@ def test_post_():
 
     assert response.status_code == 200
     assert (response.json()["predict"][: len('Income > 50k')]) == "Income > 50k"
+    #assert json.loads(response.text)["predict"] == "Income > 50k"
