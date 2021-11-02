@@ -10,13 +10,13 @@ def test_get():
 
 def test_post():
     data = {
-        "age": 28,
+        "age": 37,
         "workclass": "Private",
-        "fnlgt": 338409,
-        "education": "Bachelors",
-        "education-num": 13,
+        "fnlgt": 284582,
+        "education": "Masters",
+        "education-num": 14,
         "marital-status": "Married-civ-spouse",
-        "occupation": "Prof-specialty",
+        "occupation": "Exec-managerial",
         "relationship": "Wife",
         "race": "Black",
         "sex": "Female",
@@ -26,7 +26,7 @@ def test_post():
         "native-country": "Cuba",
     }
   #  list = [(k, v) for k, v in data.items()]
-        #28,Private,338409,Bachelors,13,Married-civ-spouse,Prof-specialty,Wife,Black,Female,0,0,40,Cuba,<=50K
+        #37,Private,284582,Masters,14,Married-civ-spouse,Exec-managerial,Wife,White,Female,0,0,40,United-States,<=50K
     response = client.post("/predict", json=data)
     #response = client.post("/predict", data=json.dumps(data))
 
