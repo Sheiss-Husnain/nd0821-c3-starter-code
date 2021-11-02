@@ -1,0 +1,4 @@
+outs:
+- md5: d8050c33e21f83d60fd94cbce1948dc0
+  size: 885
+  path: train_model.py
