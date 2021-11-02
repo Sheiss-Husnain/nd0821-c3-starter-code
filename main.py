@@ -1,5 +1,5 @@
-from starter.ml.data import process_data
-from starter.ml.model import inference
+from starter.starter.ml.data import process_data
+from starter.starter.ml.model import inference
 
 from fastapi import FastAPI, HTTPException
 
@@ -9,7 +9,7 @@ import pandas as pd
 import numpy as np
 import os
 
-model_dir = "starter/model/"
+model_dir = "./starter/model/"
 model_file = model_dir+"model.pkl"
 encoding_file = model_dir+"encoder.pkl"
 lb_file = model_dir+'lb.pkl'
