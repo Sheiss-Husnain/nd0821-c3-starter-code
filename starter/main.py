@@ -64,7 +64,7 @@ async def get_predicition(payload: Input):
 
     prediction = inference(model, X)
 
-    if prediction==1: prediction = "Income > 50k"
-    elif prediction==0: "Income <= 50k"
+    if prediction==0: prediction = "Income > 50k"
+    elif prediction==1: "Income <= 50k"
 
     return {"forecast": prediction}
