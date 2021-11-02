@@ -14,11 +14,12 @@ model_file = model_dir+"model.pkl"
 encoding_file = model_dir+"encoder.pkl"
 lb_file = model_dir+'lb.pkl'
 
-model = pd.read_pickle(model_file)
-Encoder = pd.read_pickle(encoding_file)
-lb = pd.read_pickle(lb_file)
+
 
 app = FastAPI()
+model = pd.read_pickle(model_file)
+Encoder = pd.read_pickle(encoding_file)
+lb_ = pd.read_pickle(lb_file)
 
 if "DYNO" in os.environ and os.path.isdir(".dvc"):
     os.system("dvc config core.no_scm true")
@@ -93,7 +94,7 @@ async def get_predicition(payload: Input, response_model=Output):
     "sex",
     "native-country"]
 
-    X, y, encoder, lb = process_data(df, categorical_features=cat_features, training=False,encoder=Encoder,lb=lb)
+    X, y, encoder, lb = process_data(df, categorical_features=cat_features, training=False,encoder=Encoder,lb=lb_)
 
     prediction = inference(model, X)
 
