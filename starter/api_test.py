@@ -55,4 +55,4 @@ def test_post_():
     response = client.post("/predict", data=json.dumps(data))
 
     assert response.status_code == 200
-    assert json.loads(response.text)["forecast"] == "Income > 50k"
+    assert json.loads(response.text)["prediction"] == "Income > 50k"

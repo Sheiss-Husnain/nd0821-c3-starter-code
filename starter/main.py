@@ -101,6 +101,6 @@ async def get_predicition(payload: Input, response_model=Output):
     if prediction==0: prediction = "Income > 50k"
     elif prediction==1: "Income <= 50k"
 
-    r = {"predict": prediction.tolist()}
+    r = {"predict": prediction.tolist()[1]}
 
     return r
