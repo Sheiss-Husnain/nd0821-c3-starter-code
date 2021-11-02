@@ -67,4 +67,4 @@ async def get_predicition(payload: Input, response_model=Output):
     if prediction==0: prediction = "Income > 50k"
     elif prediction==1: "Income <= 50k"
 
-    return {"predict": cache.get(prediction)}
+    return {"predict": prediction}

@@ -48,7 +48,7 @@ def test_post_():
         "capital-gain": 0,
         "capital-loss": 0,
         "hours-per-week": 60,
-        "native-country": "United-States",
+        "native-country": "United-States"
     }
         #40,Private,193524,Doctorate,16,Married-civ-spouse,Prof-specialty,Husband,White,Male,0,0,60,United-States,>50K
     response = client.post("/predict", data=json.dumps(data))
