@@ -10,7 +10,7 @@ import numpy as np
 import os
 
 model = pd.read_pickle("/model/model.pkl")
-Encoder = pd.read_pickler"/model/encoder.pkl")
+Encoder = pd.read_pickler("/model/encoder.pkl")
 
 app = FastAPI()
 
