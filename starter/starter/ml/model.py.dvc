@@ -1,0 +1,4 @@
+outs:
+- md5: 82a27e632fda3c928832c9202ea76d25
+  size: 1431
+  path: model.py
