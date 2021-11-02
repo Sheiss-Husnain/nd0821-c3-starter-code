@@ -51,7 +51,7 @@ async def root():
     return {"Welcome to Census Model"}
 
 @app.post("/predict")
-async def get_predicition(payload: Input, response_model=Output):
+async def get_predicition(payload: Input):
     df = pd.DataFrame.from_dict([payload.dict(by_alias=True)])
 
     # age = payload.age
