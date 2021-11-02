@@ -41,7 +41,7 @@ class Input(BaseModel):
     native_country: str = Field(..., example="United-States", alias="native-country")
 
 class Output(BaseModel):
-    forecast: str = "Income > 50k"
+    predict: str = "Income > 50k"
 
 @app.get("/")
 async def root():
@@ -67,4 +67,4 @@ async def get_predicition(payload: Input, response_model=Output):
     if prediction==0: prediction = "Income > 50k"
     elif prediction==1: "Income <= 50k"
 
-    return {"forecast": prediction}
+    return {"predict": cache.get(prediction)}
