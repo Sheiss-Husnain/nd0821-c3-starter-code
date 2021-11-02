@@ -27,7 +27,7 @@ def test_post():
     }
     list = [(k, v) for k, v in data.items()]
         #28,Private,338409,Bachelors,13,Married-civ-spouse,Prof-specialty,Wife,Black,Female,0,0,40,Cuba,<=50K
-    response = client.post("/predict", json=data)
+    response = client.post("/predict", json=list)
     #response = client.post("/predict", data=json.dumps(data))
 
     assert response.status_code == 200
