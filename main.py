@@ -1,5 +1,5 @@
-from starter.starter.ml.data.py import process_data
-from starter.starter.ml.model.py import inference
+from starter.starter.ml.data import process_data
+from starter.starter.ml.model import inference
 
 from fastapi import FastAPI, HTTPException
 
