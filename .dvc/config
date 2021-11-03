@@ -1,5 +1,6 @@
 [core]
     remote = s3remote
+    hardlink_lock = true
 ['remote "localremote"']
     url = ../local_remote
 ['remote "s3remote"']
