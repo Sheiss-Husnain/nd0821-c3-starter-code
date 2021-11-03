@@ -35,5 +35,5 @@ data = {
 #       }
 #<=50k
 response = requests.post('https://sheiss-census.herokuapp.com/predict/', json=data)
-
+#response = client.post("/predict", json=data)
 print(response)
