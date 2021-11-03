@@ -6,3 +6,5 @@
 *  Future updates will include front-end dev to host a neater form for end users which will be converted to json behind the scenes.
 
 *  See the Actions tab to under the CI workflow.  Once a new commit is pushed to the repo, CI workflow is triggered and the new app will be automatically deployed via Heroku only if the checks are passed successfully.
+
+*  If app is no longer deployed, please visit the 'starter/screenshot' subdirectory to see what it looked like.
