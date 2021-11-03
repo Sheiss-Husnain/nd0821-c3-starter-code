@@ -12,7 +12,7 @@ import os
 model_dir = "./starter/model/"
 model_file = model_dir+"model.pkl"
 encoding_file = model_dir+"encoder.pkl"
-lb_file = model_dir+'lb.pkl'
+lb_file = model_dir+"lb.pkl"
 
 
 
